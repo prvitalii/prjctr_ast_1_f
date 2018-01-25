@@ -1,0 +1,6 @@
+mixin b-menu(menuItems)
+	+b.menu
+		+e('ul').navbar
+			each item in menuItems
+				+e("li").nav-item
+					+e(href='#').nav-link= item
