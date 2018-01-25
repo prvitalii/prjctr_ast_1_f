@@ -1,5 +1,4 @@
-mixin b-area(areas)
+mixin b-area(area)
 	+b.area
-		each area in areas
-			+e(src= area.img).picture
-			+e('h3').name= area.title
+		+e('img').picture(src=asset('i/' + area.img))
+		+e('h3').name= area.title

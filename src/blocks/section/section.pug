@@ -1,4 +1,6 @@
-mixin b-area(data)
-	+b.area
-		+e("h1").title= data.title
-		+e("p").text= data.text
+mixin b-section(areas)
+	+b.section
+		+e("h1").title Виберіть категорію
+		+e.container
+			each area in areas 
+				+b-area(area)

@@ -1,11 +1,17 @@
 @import '../../assets/s/variables'
-// $phone
-// $tablet-port
-// $tablet-land
-// $desktop
-.about
-	background: grey
-	color: #fff
+
+.section
+	color: grey
+	padding-top: 20px
+	height: 100vh
+	background: #c9e1ef
+	&__container
+		display: flex
+		justify-content: center
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: repeat(2, 1fr)
+		flex-wrap: wrap
+		max-width: 1200px
+		margin: 0 auto
 	&__title
 		text-align: center
-	&__text
