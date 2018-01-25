@@ -1,0 +1,5 @@
+mixin b-area(areas)
+	+b.area
+		each area in areas
+			+e(src= area.img).picture
+			+e('h3').name= area.title
