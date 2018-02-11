@@ -72,9 +72,3 @@ gulp.task('build', gulp.parallel('html', 'sass', 'js', 'copy'));
 gulp.task('start', gulp.parallel('watch', 'serve'));
 
 gulp.task('default', gulp.series('clean', 'build', 'start'));
-
-
-
-
-
-

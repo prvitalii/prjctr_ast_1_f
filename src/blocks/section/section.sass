@@ -1,17 +1,14 @@
-@import '../../assets/s/variables'
-
 .section
-	color: grey
-	padding-top: 20px
-	height: 100vh
+	color: #6d7179
 	background: #c9e1ef
 	&__container
 		display: flex
-		justify-content: space-around
-		grid-template-columns: repeat(4, 1fr)
-		grid-template-rows: repeat(2, 1fr)
+		justify-content: center
 		flex-wrap: wrap
-		max-width: 1200px
+		max-width: 1200px 
 		margin: 0 auto
 	&__title
 		text-align: center
+		padding-top: 15px
+		@media #{$phone}, #{$tablet-port}
+			display: none

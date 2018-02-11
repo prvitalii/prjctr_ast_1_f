@@ -1,4 +1,5 @@
 @import '../../assets/s/variables'
+
 .header
 	display: flex
 	justify-content: center
@@ -8,6 +9,10 @@
 	color: #fff
 	&__logo
 		height: 50px
-		padding: 10px
+		@media #{$phone}, #{$tablet-port}
+			display: none
 	&__title
-		padding: 20px 0
+		padding: 5px
+		text-align: center
+		@media #{$lg-screen}
+			padding: 20px
